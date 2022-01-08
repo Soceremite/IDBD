@@ -1,0 +1,190 @@
+:root{
+  --textcolorIndex:#81d8cf;
+  --colorIndex: #ecf0f3;
+  --colorSidebar:#ecf0f3;
+  --brShadow:  -5px -5px 20px #fff, 5px 5px 20px #babecc;
+  --tlShadow: 6px -6px 15px rgba(255,255,255,0.8);
+  --logourl: url('/logo.jpg');
+}
+
+body{
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--colorIndex);
+  letter-spacing: -0.2px;
+  font-size: 16px;
+}
+.neu_global{
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--colorIndex);
+  letter-spacing: -0.2px;
+  font-size: 16px;
+}
+.neu_sidebar_container{
+  background-color: var(--colorSidebar);
+}
+.neu_content{
+  background:var(--colorIndex);
+  border-radius: 10px;
+  box-shadow: var(--brShadow);
+}
+.neu_menu {
+  background-color:var(--brShadow);
+  font-weight: bold;
+  box-shadow: var(--brShadow);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  text-shadow: 1px 1px 0 #FFF;
+}
+.neu_menu:hover {
+  box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
+}
+.neu_menu:active {
+  box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+}
+.neu_menu.icon {
+  margin-right: 8px;
+}
+.neu_menu.unit {
+  border-radius: 8px;
+  line-height: 0;
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8px;
+  font-size: 19.2px;
+}
+.neu_menu.unit .icon {
+  margin-right: 0;
+}
+.neu_menu.red {
+  display: block;
+  color: #AE1100;
+}
+.neu_dropdown_menu{
+  background:var(--colorIndex);
+  border-radius: 10px;
+  box-shadow: var(--brShadow);
+}
+.neu_text {
+  color: var(--textcolorIndex);
+  font-weight: bold;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-shadow: var(--brShadow);
+  position: relative;
+}
+.neu_text:before {
+      left: 0;
+    width: 100px;
+    height: 100px;
+      top: -150px;
+      z-index: 10;
+      box-shadow: inset var(--brShadow);
+}
+.neu_text:after {
+  left: -50px;
+  width: 200px;
+  height: 200px;
+  top: -200px;
+  box-shadow: var(--brShadow);
+}
+.neu_input {
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  border-radius: 320px;
+  padding: 16px;
+  background-color: #EBECF0;
+  text-shadow: 1px 1px 0 #FFF;
+}
+.neu_button {
+  background-color:var(--brShadow);
+  font-weight: bold;
+  box-shadow: var(--brShadow);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  padding: 16px;
+  text-shadow: 1px 1px 0 #FFF;
+}
+.neu_button:hover {
+  box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
+}
+.neu_button:active {
+  box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+}
+.neu_button .icon {
+  margin-right: 8px;
+}
+.neu_button.unit {
+  border-radius: 8px;
+  line-height: 0;
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8px;
+  font-size: 19.2px;
+}
+.neu_button.unit .icon {
+  margin-right: 0;
+}
+.neu_button.red {
+  display: block;
+  color: #AE1100;
+}
+
+.item {
+  display: block;
+  margin:auto;
+  margin-left: 39%;
+  position: relative;
+  background: #ecf0f3;
+}
+.neu-shadow-ring {
+  border-radius: 100%;
+  box-shadow: 9px 9px 15px #d1d9e6, -9px -9px 15px #fff;
+}
+
+.neu-shadow-ring:before {
+  content: "";
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  width: 80%;
+  height: 80%;
+  border-radius: 100%;
+  background: #ecf0f3;
+  background-image:var(--logourl);
+  background-position: 50% 50%;
+  background-size:100% 100%;
+  box-shadow: var(--brShadow);
+}
+.neu-shadow-ring-2 {
+  border-radius: 100%;
+  box-shadow: inset 9px 9px 15px #d1d9e6, inset -9px -9px 15px #fff;
+}
+
+.neu-shadow-ring-2:before {
+  content: "";
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  width: 80%;
+  height: 80%;
+  border-radius: 100%;
+  background: #ecf0f3;
+  background-image:var(--logourl);
+  background-position: 50% 50%;
+  background-size:100% 100%;
+  box-shadow: 9px 9px 15px #d1d9e6, -9px -9px 15px rgb(247, 247, 247);
+  /* box-shadow: inset 3px 3px 15px #d1d9e6, inset -3px -3px 15px #fff; */
+}
